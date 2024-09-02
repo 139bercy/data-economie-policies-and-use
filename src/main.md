@@ -142,12 +142,12 @@ moissonné de manière programmatique par plusieurs plateformes, dont la platefo
 
 **Attention** : Dans les fichiers tabulaires de type `CSV` ou `XLSX`, la première ligne est considérée comme le `header`
 contenant les en-têtes des colonnes. La plupart des erreurs constatées impliquant un header manquant sont dues à un
-formatage inadéquat du fichier source.
+formatage inadéquat du fichier source. Ce paramètre peut être modifié lors de l'import d'un fichier en mode "Source".
 
 ### Format des fichiers
 
-Le format ainsi que la manière avec laquelle un fichier est structuré, ont une forte influence sur son accessibilité, sa
-lisibilité et sa réutilisation.
+Le format d'un fichier ainsi que la manière avec laquelle un fichier est structuré, ont une forte influence sur son
+accessibilité, sa lisibilité et sa réutilisation.
 
 Principes généraux :
 
@@ -358,6 +358,15 @@ données, pourvu que :
 ## Opérations courantes
 
 ### Ouverture d'un jeu de données
+
+Un jeu de données doit être importé sur la plateforme comme source plutôt qu'en pièce jointe, à la fois pour le rendre
+accessible programmatiquement (API), l'exporter facilement dans divers formats et pouvoir l'explorer facilement.
+
+Les fichiers compressés (`.zip`, `.tar.gz`, etc.) sont difficiles à utiliser, ne donnent aucune information sur leur
+contenu et ne sont pas recommandés. Le format `.rar` est quant à lui propriétaire et ne doit pas être utilisé.
+
+Dans l'onglet `Traitement`, typer le type de champ et définir certains champs comme "facette" permet de faciliter
+l'affichage, à l'utilisateur de filtrer le jeu de données et de faire des exports ciblés.
 
 Par sécurité, les jeux de données publiés sont par défaut en usage restreint. Les producteurs de données sont par
 conséquent responsables de leur ouverture, qui nécessite une action consciente :
