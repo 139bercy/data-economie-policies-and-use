@@ -2,6 +2,17 @@
 
 
 
+## v1.0.1 (2024-12-11)
+
+### Feature
+
+* feat: update content on metadata section ([`e3d1368`](https://github.com/139bercy/data-economie-policies-and-use/commit/e3d1368bd8b8b0a042f84299940adbe8235ce83f))
+
+### Fix
+
+* fix(main): update project template ([`6b49f68`](https://github.com/139bercy/data-economie-policies-and-use/commit/6b49f689fbd5c898ca143c78019213ee73749f5c))
+
+
 ## v1.0.0 (2024-10-01)
 
 ### Chore
